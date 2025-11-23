@@ -9,10 +9,11 @@ export default function Contact() {
                         Contact Us
                     </span>
                     <h2 className="text-4xl md:text-5xl font-bold mb-4">
-                        Contact Us
+                        Ready to Transform <br />
+                        Your Business?
                     </h2>
                     <p className="text-gray-400 max-w-2xl mx-auto text-lg">
-                        Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam sit nullam.
+                        Let's discuss how our digital solutions can help you achieve your goals. Reach out to us for a consultation.
                     </p>
                 </div>
 
@@ -21,11 +22,11 @@ export default function Contact() {
                     {/* Left Content */}
                     <div className="pt-8">
                         <h3 className="text-3xl md:text-4xl font-bold mb-6">
-                            Let us know what you <br />
-                            think!
+                            Let's build something <br />
+                            extraordinary together.
                         </h3>
                         <p className="text-gray-400 text-lg mb-12 max-w-md leading-relaxed">
-                            Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam sit nullam.
+                            Whether you need a custom mobile app, an AI-powered automation system, or a dedicated development team, we're here to help.
                         </p>
 
                         <div className="space-y-8">

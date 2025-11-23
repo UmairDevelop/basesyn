@@ -6,8 +6,7 @@ export default function Navbar() {
             <div className="container mx-auto px-4 h-20 flex items-center justify-between">
                 {/* Logo */}
                 <Link href="/" className="flex items-center gap-2">
-                    <div className="w-8 h-8 bg-black rounded-tr-xl rounded-bl-xl"></div>
-                    <span className="text-2xl font-bold tracking-tight text-black">Basesyn</span>
+                    <img src="/logo.png" alt="Basesyn Logo" className="h-10 w-auto object-contain" />
                 </Link>
 
                 {/* Desktop Navigation */}

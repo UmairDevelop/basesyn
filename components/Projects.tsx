@@ -3,40 +3,40 @@ import Image from "next/image";
 
 const projects = [
     {
-        title: "Mobile App Design",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        title: "AI Customer Support Bot",
+        description: "Implemented a custom NLP-driven chatbot for a fintech firm, reducing support ticket volume by 45% and improving response times.",
+        image: "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?q=80&w=2006&auto=format&fit=crop",
+        tags: ["AI Automation", "Chatbot"],
+    },
+    {
+        title: "E-commerce Mobile App",
+        description: "Developed a high-performance native iOS and Android app for a retail brand, resulting in a 30% increase in mobile sales.",
         image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=2070&auto=format&fit=crop",
-        tags: ["App Design", "UX Research"],
+        tags: ["Mobile App", "iOS & Android"],
     },
     {
-        title: "Web Design",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        image: "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?q=80&w=2055&auto=format&fit=crop",
-        tags: ["Web Design", "UX Research"],
+        title: "Enterprise Staff Augmentation",
+        description: "Provided a dedicated team of senior React developers to accelerate the launch of a SaaS platform's new dashboard feature.",
+        image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070&auto=format&fit=crop",
+        tags: ["Staff Augmentation", "Web Dev"],
     },
     {
-        title: "Brand Design",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        image: "https://images.unsplash.com/photo-1600607686527-6fb886090705?q=80&w=2000&auto=format&fit=crop",
-        tags: ["Brand Design", "UX Research"],
+        title: "Logistics Automation System",
+        description: "Built an AI-powered workflow automation tool that streamlined inventory management and reduced manual data entry errors by 90%.",
+        image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=2070&auto=format&fit=crop",
+        tags: ["AI Automation", "Web App"],
     },
     {
-        title: "UI/UX Design",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        image: "https://images.unsplash.com/photo-1586717791821-3f44a5638d48?q=80&w=2070&auto=format&fit=crop",
-        tags: ["UI/UX Design", "UX Research"],
+        title: "Fintech Web Platform",
+        description: "Designed and developed a secure, responsive web application for real-time financial tracking and investment management.",
+        image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop",
+        tags: ["Web Application", "Fintech"],
     },
     {
-        title: "Web Development",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2072&auto=format&fit=crop",
-        tags: ["Web Develope", "UX Research"],
-    },
-    {
-        title: "Graphic Design",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        image: "https://images.unsplash.com/photo-1626785774573-4b79931256ce?q=80&w=2070&auto=format&fit=crop",
-        tags: ["Graphik Design", "UX Research"],
+        title: "Healthcare Patient Portal",
+        description: "Created a HIPAA-compliant mobile app allowing patients to schedule appointments and view medical records securely.",
+        image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=2028&auto=format&fit=crop",
+        tags: ["Mobile App", "Healthcare"],
     },
 ];
 
@@ -48,13 +48,13 @@ export default function Projects() {
                 {/* Header */}
                 <div className="text-center mb-16">
                     <span className="inline-block py-1 px-4 rounded-full border border-accent-mint/30 text-accent-mint text-xs font-bold tracking-widest uppercase mb-6">
-                        Project
+                        Case Studies
                     </span>
                     <h2 className="text-4xl md:text-5xl font-bold mb-4">
-                        Our Project
+                        Our Recent Work
                     </h2>
                     <p className="text-gray-400 max-w-2xl mx-auto text-lg">
-                        Some creative designs created by our agency
+                        Explore how we've helped businesses transform their operations and engage customers through innovative technology.
                     </p>
                 </div>
 

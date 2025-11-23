@@ -10,22 +10,21 @@ export default function Hero() {
                     {/* Left Content */}
                     <div className="max-w-2xl flex flex-col justify-center">
                         <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-white mb-8 leading-[1.1]">
-                            Make Your <br />
-                            Business <br />
-                            <span className="text-accent-mint">More Powerful</span> <br />
-                            With Us
+                            Scalable Digital <br />
+                            Solutions for the <br />
+                            <span className="text-accent-mint">AI Era</span>
                         </h1>
 
                         <p className="text-gray-400 text-lg mb-10 max-w-lg leading-relaxed">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            We engineer high-performance mobile applications and intelligent AI automation systems that drive efficiency, growth, and digital transformation for forward-thinking businesses.
                         </p>
 
                         <div>
                             <Link
-                                href="#project"
+                                href="#contact"
                                 className="group inline-flex items-center justify-center h-14 px-8 rounded-full border border-accent-mint text-accent-mint font-medium tracking-wide hover:bg-accent-mint hover:text-black transition-all duration-300"
                             >
-                                VIEW PROJECT
+                                START A PROJECT
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="ml-2 group-hover:translate-x-1 transition-transform"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" /></svg>
                             </Link>
                         </div>

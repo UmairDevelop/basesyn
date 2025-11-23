@@ -1,21 +1,21 @@
 export default function Testimonials() {
     const testimonials = [
         {
-            quote: "Basesyn transformed our digital presence completely. The team's attention to detail and design expertise is unmatched.",
+            quote: "Basesyn's AI automation solution completely revolutionized our inventory management. We've seen a 40% reduction in operational costs within just three months.",
             author: "Sarah Johnson",
-            role: "CEO, TechFlow",
+            role: "COO, LogisticsPro",
             avatar: "SJ"
         },
         {
-            quote: "Working with Basesyn was a game-changer for our startup. They delivered a stunning website that perfectly captures our brand.",
+            quote: "The mobile app they developed for us is flawless. Their team's expertise in both iOS and Android ensured a seamless launch and 5-star user reviews.",
             author: "Michael Chen",
-            role: "Founder, Innovate",
+            role: "Founder, RetailTech",
             avatar: "MC"
         },
         {
-            quote: "Professional, creative, and efficient. The best agency experience we've had in years. Highly recommended.",
+            quote: "We needed to scale our dev team fast, and Basesyn's staff augmentation service provided us with top-tier engineers who hit the ground running immediately.",
             author: "Emily Davis",
-            role: "Marketing Director, GrowthCo",
+            role: "CTO, FinServe",
             avatar: "ED"
         }
     ];

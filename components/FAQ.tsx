@@ -5,24 +5,24 @@ import Link from "next/link";
 
 const faqs = [
     {
-        question: "How long does it take to complete a web development project?",
-        answer: "The timeline varies depending on the project's complexity and requirements. Our team strives to deliver projects on time while maintaining the highest quality standards.",
+        question: "How can AI automation benefit my business?",
+        answer: "AI automation can significantly reduce manual workload, minimize errors, and operate 24/7. From customer support chatbots to data processing workflows, we tailor solutions that drive efficiency and cost savings.",
     },
     {
-        question: "Can you handle large-scale mobile app development projects?",
-        answer: "Yes, we have extensive experience in building scalable mobile applications for various industries, ensuring high performance and reliability.",
+        question: "Do you develop native apps for both iOS and Android?",
+        answer: "Yes, we specialize in native development using Swift for iOS and Kotlin for Android to ensure maximum performance. We also offer cross-platform solutions depending on your project requirements.",
     },
     {
-        question: "Can you integrate third-party APIs into our mobile app?",
-        answer: "Absolutely. We specialize in seamless API integrations to enhance your app's functionality and connect it with other essential services.",
+        question: "How does your staff augmentation service work?",
+        answer: "We provide pre-vetted, senior-level developers who integrate directly into your existing team. You manage them as your own, while we handle payroll, benefits, and retention.",
     },
     {
-        question: "How do you ensure cross-platform compatibility for mobile apps?",
-        answer: "We use modern frameworks like React Native and Flutter to build apps that work flawlessly on both iOS and Android platforms from a single codebase.",
+        question: "What is the typical timeline for a custom web application?",
+        answer: "Timelines vary based on complexity, but a standard MVP usually takes 8-12 weeks. We follow an agile methodology to deliver iterative value and ensure the final product meets your exact needs.",
     },
     {
-        question: "What is your approach to user experience (UX) design?",
-        answer: "Our UX design process focuses on understanding your users' needs and behaviors to create intuitive, engaging, and accessible interfaces.",
+        question: "Can you help us integrate AI into our existing software?",
+        answer: "Absolutely. We specialize in API integrations and can embed AI capabilities—like predictive analytics or natural language processing—into your legacy systems to modernize them.",
     },
 ];
 

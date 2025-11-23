@@ -9,11 +9,10 @@ export default function Footer() {
                     {/* Brand Column */}
                     <div className="space-y-6">
                         <Link href="/" className="flex items-center gap-2 mb-4">
-                            <div className="w-8 h-8 bg-black rounded-tr-xl rounded-bl-xl"></div>
-                            <span className="text-2xl font-bold tracking-tight">Basesyn</span>
+                            <img src="/logo.png" alt="Basesyn Logo" className="h-10 w-auto object-contain" />
                         </Link>
                         <p className="text-sm leading-relaxed font-medium max-w-xs">
-                            Our team has a successful track record of helping brands scale profitably based high-performing strategies.
+                            Empowering businesses with scalable mobile applications, AI automation, and expert staff augmentation services.
                         </p>
                         <div className="flex gap-4 pt-2">
                             {/* Social Icons */}
