@@ -11,20 +11,23 @@ export default function Navbar() {
 
                 {/* Desktop Navigation */}
                 <div className="hidden md:flex items-center gap-8">
-                    <Link href="/" className="text-sm font-medium text-black hover:opacity-70 transition-opacity flex items-center gap-1">
-                        Home <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m6 9 6 6 6-6" /></svg>
+                    <Link href="/" className="text-sm font-medium text-black hover:opacity-70 transition-opacity">
+                        Home
                     </Link>
                     <Link href="#services" className="text-sm font-medium text-black hover:opacity-70 transition-opacity">
                         Services
                     </Link>
                     <Link href="#project" className="text-sm font-medium text-black hover:opacity-70 transition-opacity">
-                        Project
+                        Projects
                     </Link>
-                    <Link href="#page" className="text-sm font-medium text-black hover:opacity-70 transition-opacity flex items-center gap-1">
-                        Page <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m6 9 6 6 6-6" /></svg>
+                    <Link href="#testimonials" className="text-sm font-medium text-black hover:opacity-70 transition-opacity">
+                        Testimonials
+                    </Link>
+                    <Link href="#faq" className="text-sm font-medium text-black hover:opacity-70 transition-opacity">
+                        FAQ
                     </Link>
                     <Link href="#contact" className="text-sm font-medium text-black hover:opacity-70 transition-opacity">
-                        Contact Us
+                        Contact
                     </Link>
                 </div>
 

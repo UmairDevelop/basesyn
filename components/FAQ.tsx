@@ -34,7 +34,7 @@ export default function FAQ() {
     };
 
     return (
-        <section className="py-24 bg-black text-white">
+        <section id="faq" className="py-24 bg-black text-white">
             <div className="container px-4 mx-auto max-w-4xl">
 
                 {/* Header */}

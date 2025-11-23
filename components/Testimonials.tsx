@@ -21,7 +21,7 @@ export default function Testimonials() {
     ];
 
     return (
-        <section className="py-24 bg-black relative overflow-hidden">
+        <section id="testimonials" className="py-24 bg-black relative overflow-hidden">
             {/* Background Elements */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-primary/5 rounded-full blur-3xl pointer-events-none" />
 
