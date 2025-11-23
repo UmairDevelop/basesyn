@@ -59,9 +59,8 @@ export default function Footer() {
                     <div>
                         <h4 className="font-bold text-lg mb-6">Contact Info</h4>
                         <ul className="space-y-4 mb-8">
-                            <li className="text-sm font-medium">Add: Sunamganj, Sylhet, Bangladesh</li>
-                            <li className="text-sm font-medium">Email: hello@basesyn.com</li>
-                            <li className="text-sm font-medium">Call: +8801316203355</li>
+                            <li className="text-sm font-medium">Email: contact@basesyn.com</li>
+                            <li className="text-sm font-medium">Call: +92 315 467 3559</li>
                         </ul>
                         <Link href="#contact" className="inline-flex items-center justify-center h-12 px-8 bg-black text-white text-sm font-bold rounded-md hover:opacity-80 transition-opacity group">
                             LET'S TALK
@@ -73,7 +72,7 @@ export default function Footer() {
 
                 {/* Bottom Bar */}
                 <div className="pt-8 border-t border-black/10 flex flex-col md:flex-row justify-between items-center gap-4">
-                    <p className="text-sm font-medium">Copyright ©2024 Basesyn. All rights reserved.</p>
+                    <p className="text-sm font-medium">Copyright ©2026 Basesyn. All rights reserved.</p>
                     <div className="flex gap-8">
                         {['Our Credentials', 'Terms & Conditions', 'Privacy Policy'].map((item) => (
                             <Link key={item} href="#" className="text-sm font-medium hover:opacity-70 transition-opacity">{item}</Link>
