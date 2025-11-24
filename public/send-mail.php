@@ -31,7 +31,7 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
 }
 
 // Email configuration
-$to = "umair@basesyn.com";
+$to = "umair.ahmad@basesyn.com";
 $subject = "New Contact Form Submission from $name";
 $headers = "From: $email\r\n";
 $headers .= "Reply-To: $email\r\n";
