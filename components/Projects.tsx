@@ -3,40 +3,46 @@ import Image from "next/image";
 
 const projects = [
     {
-        title: "AI Customer Support Bot",
-        description: "Implemented a custom NLP-driven chatbot for a fintech firm, reducing support ticket volume by 45% and improving response times.",
-        image: "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?q=80&w=2006&auto=format&fit=crop",
-        tags: ["AI Automation", "Chatbot"],
+        title: "Chaveirim",
+        description: "Developed a robust community platform for a non-profit organization, facilitating volunteer coordination and emergency response services.",
+        image: "https://images.unsplash.com/photo-1593113598332-cd288d649433?q=80&w=2070&auto=format&fit=crop", // Community/Helping hands theme
+        tags: ["Non-Profit", "Web Platform"],
+        link: "https://chaveirim.org/"
     },
     {
-        title: "E-commerce Mobile App",
-        description: "Developed a high-performance native iOS and Android app for a retail brand, resulting in a 30% increase in mobile sales.",
-        image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=2070&auto=format&fit=crop",
-        tags: ["Mobile App", "iOS & Android"],
+        title: "Exotic Auto Services",
+        description: "Designed and built a premium digital presence for a luxury auto service center, featuring service booking and portfolio showcases.",
+        image: "https://images.unsplash.com/photo-1617788138017-80ad40651399?q=80&w=2070&auto=format&fit=crop", // Luxury car theme
+        tags: ["Automotive", "Web Design"],
+        link: "https://exoticautoservices.ae/"
     },
     {
-        title: "Enterprise Staff Augmentation",
-        description: "Provided a dedicated team of senior React developers to accelerate the launch of a SaaS platform's new dashboard feature.",
-        image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070&auto=format&fit=crop",
-        tags: ["Staff Augmentation", "Web Dev"],
+        title: "Al Zaabi Auto Care",
+        description: "Created a comprehensive corporate website for a leading auto care center, integrating service menus and customer inquiry forms.",
+        image: "https://images.unsplash.com/photo-1487754180451-c456f719a1fc?q=80&w=2070&auto=format&fit=crop", // Auto mechanic theme
+        tags: ["Corporate", "Automotive"],
+        link: "https://alzaabiautocare.com/"
     },
     {
-        title: "Logistics Automation System",
-        description: "Built an AI-powered workflow automation tool that streamlined inventory management and reduced manual data entry errors by 90%.",
-        image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=2070&auto=format&fit=crop",
-        tags: ["AI Automation", "Web App"],
+        title: "Ayurveda AESMC",
+        description: "Developed a calming, wellness-focused website for an Ayurvedic medical center, highlighting treatments and holistic health services.",
+        image: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=2070&auto=format&fit=crop", // Spa/Wellness theme
+        tags: ["Healthcare", "Wellness"],
+        link: "https://ayurveda.aesmc.com/"
     },
     {
-        title: "Fintech Web Platform",
-        description: "Designed and developed a secure, responsive web application for real-time financial tracking and investment management.",
-        image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop",
-        tags: ["Web Application", "Fintech"],
+        title: "Pet Med Mart",
+        description: "Engineered a high-conversion e-commerce platform for pet medications, ensuring a seamless shopping experience for pet owners.",
+        image: "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?q=80&w=2688&auto=format&fit=crop", // Dog/Pet theme
+        tags: ["E-commerce", "Pet Care"],
+        link: "https://petmedmart.com/"
     },
     {
-        title: "Healthcare Patient Portal",
-        description: "Created a HIPAA-compliant mobile app allowing patients to schedule appointments and view medical records securely.",
-        image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=2028&auto=format&fit=crop",
-        tags: ["Mobile App", "Healthcare"],
+        title: "We Buy Any Home",
+        description: "Built a high-traffic real estate lead generation site, streamlining the property selling process with instant valuation tools.",
+        image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=2073&auto=format&fit=crop", // Real estate theme
+        tags: ["Real Estate", "Lead Gen"],
+        link: "https://www.webuyanyhome.com/"
     },
 ];
 
@@ -61,44 +67,44 @@ export default function Projects() {
                 {/* Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
                     {projects.map((project, index) => (
-                        <div
+                        <a
                             key={index}
-                            className="group rounded-3xl overflow-hidden border border-white/10 bg-[#111] text-white transition-all duration-300 flex flex-col hover:bg-accent-mint hover:border-accent-mint hover:text-black cursor-pointer"
+                            href={project.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="group relative block bg-[#111] border border-white/10 rounded-2xl overflow-hidden hover:border-accent-mint transition-colors duration-300"
                         >
                             {/* Image Container */}
-                            <div className="p-6 pb-0">
-                                <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
-                                    <img
-                                        src={project.image}
-                                        alt={project.title}
-                                        className="object-cover w-full h-full transform group-hover:scale-105 transition-transform duration-500"
-                                    />
-                                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 bg-accent-mint rounded-full flex items-center justify-center shadow-lg opacity-0 group-hover:opacity-100 transition-all duration-300 scale-50 group-hover:scale-100">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-black"><line x1="7" y1="17" x2="17" y2="7" /><polyline points="7 7 17 7 17 17" /></svg>
+                            <div className="relative h-64 overflow-hidden">
+                                <img
+                                    src={project.image}
+                                    alt={project.title}
+                                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                                />
+                                <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                    <div className="w-16 h-16 rounded-full bg-accent-mint flex items-center justify-center text-black transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="7" y1="17" x2="17" y2="7" /><polyline points="7 7 17 7 17 17" /></svg>
                                     </div>
                                 </div>
                             </div>
 
                             {/* Content */}
-                            <div className="p-8 pt-6 flex flex-col grow">
-                                {/* Tags */}
-                                <div className="flex flex-wrap gap-3 mb-4">
+                            <div className="p-8 group-hover:bg-accent-mint transition-colors duration-300">
+                                <div className="flex flex-wrap gap-2 mb-4">
                                     {project.tags.map((tag, i) => (
-                                        <span
-                                            key={i}
-                                            className="px-4 py-1.5 rounded-full text-xs font-bold border border-white/20 text-white group-hover:border-black/20 group-hover:text-black transition-colors duration-300"
-                                        >
+                                        <span key={i} className="text-xs font-bold uppercase tracking-wider text-accent-mint group-hover:text-black/70 transition-colors">
                                             {tag}
                                         </span>
                                     ))}
                                 </div>
-
-                                <h3 className="text-2xl font-bold mb-3">{project.title}</h3>
-                                <p className="text-sm leading-relaxed mb-4 text-gray-400 group-hover:text-black/80 transition-colors duration-300">
+                                <h3 className="text-2xl font-bold mb-3 group-hover:text-black transition-colors">
+                                    {project.title}
+                                </h3>
+                                <p className="text-gray-400 group-hover:text-black/80 transition-colors leading-relaxed">
                                     {project.description}
                                 </p>
                             </div>
-                        </div>
+                        </a>
                     ))}
                 </div>
 
