@@ -35,21 +35,35 @@ export default function Footer() {
                     <div>
                         <h4 className="font-bold text-lg mb-6">Company</h4>
                         <ul className="space-y-4">
-                            {['Home', 'Services', 'Project', 'Team', 'Pricing Plans'].map((item) => (
-                                <li key={item}>
-                                    <Link href="#" className="text-sm font-medium hover:opacity-70 transition-opacity">{item}</Link>
+                            {[
+                                { name: 'Home', href: '/' },
+                                { name: 'Services', href: '#services' },
+                                { name: 'Projects', href: '#project' },
+                                { name: 'Testimonials', href: '#testimonials' },
+                                { name: 'FAQ', href: '#faq' },
+                                { name: 'Contact', href: '#contact' }
+                            ].map((item) => (
+                                <li key={item.name}>
+                                    <Link href={item.href} className="text-sm font-medium hover:opacity-70 transition-opacity">{item.name}</Link>
                                 </li>
                             ))}
                         </ul>
                     </div>
 
-                    {/* Legal Links */}
+                    {/* Services Links */}
                     <div>
-                        <h4 className="font-bold text-lg mb-6">Legal</h4>
+                        <h4 className="font-bold text-lg mb-6">Services</h4>
                         <ul className="space-y-4">
-                            {['Style Guide', 'License', 'Contact', 'Client Say', 'FAQs'].map((item) => (
+                            {[
+                                'Native Android Solutions',
+                                'iOS Application Solutions',
+                                'AI Automations',
+                                'Staff Augmentation',
+                                'Web Applications',
+                                'Custom AI Chatbots'
+                            ].map((item) => (
                                 <li key={item}>
-                                    <Link href="#" className="text-sm font-medium hover:opacity-70 transition-opacity">{item}</Link>
+                                    <Link href="#contact" className="text-sm font-medium hover:opacity-70 transition-opacity">{item}</Link>
                                 </li>
                             ))}
                         </ul>

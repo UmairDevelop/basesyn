@@ -9,7 +9,7 @@ export default function Hero() {
 
                     {/* Left Content */}
                     <div className="max-w-2xl flex flex-col justify-center">
-                        <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-white mb-8 leading-[1.1]">
+                        <h1 className="text-4xl md:text-7xl font-bold tracking-tight text-white mb-8 leading-[1.1]">
                             Scalable Digital <br />
                             Solutions for the <br />
                             <span className="text-accent-mint">AI Era</span>

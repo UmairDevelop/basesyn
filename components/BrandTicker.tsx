@@ -11,6 +11,7 @@ export default function BrandTicker() {
         "/brand-logos/brand_ticker9.webp",
         "/brand-logos/brand_ticker10.svg",
         "/brand-logos/brand_ticker11.png",
+        "/brand-logos/brand_ticker12.png",
     ];
 
     // Create a base set that is wide enough to fill the screen
@@ -23,7 +24,7 @@ export default function BrandTicker() {
                 {/* First Set */}
                 <div className="flex animate-scroll gap-32 pr-32 min-w-full shrink-0 items-center justify-around">
                     {baseSet.map((logo, index) => (
-                        <div key={`set1-${index}`} className="flex items-center justify-center shrink-0 h-12 w-32">
+                        <div key={`set1-${index}`} className="flex items-center justify-center shrink-0 h-14 w-40">
                             <img
                                 src={logo}
                                 alt={`Brand Logo ${index + 1}`}
@@ -36,7 +37,7 @@ export default function BrandTicker() {
                 {/* Second Set (Duplicate for Loop) */}
                 <div className="flex animate-scroll gap-32 pr-32 min-w-full shrink-0 items-center justify-around" aria-hidden="true">
                     {baseSet.map((logo, index) => (
-                        <div key={`set2-${index}`} className="flex items-center justify-center shrink-0 h-12 w-32">
+                        <div key={`set2-${index}`} className="flex items-center justify-center shrink-0 h-14 w-40">
                             <img
                                 src={logo}
                                 alt={`Brand Logo ${index + 1}`}

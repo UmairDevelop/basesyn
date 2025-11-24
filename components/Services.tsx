@@ -67,7 +67,8 @@ export default function Services() {
                 {/* Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {services.map((service, index) => (
-                        <div
+                        <Link
+                            href="#contact"
                             key={index}
                             className="relative group p-10 rounded-2xl border border-white/10 bg-[#111] text-white transition-all duration-300 flex flex-col items-center text-center hover:bg-accent-mint hover:border-accent-mint hover:text-black cursor-pointer"
                         >
@@ -85,7 +86,7 @@ export default function Services() {
                             <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 w-12 h-12 bg-accent-mint rounded-full border-4 border-black flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 scale-50 group-hover:scale-100 shadow-lg">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-black"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" /></svg>
                             </div>
-                        </div>
+                        </Link>
                     ))}
                 </div>
 
