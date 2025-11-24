@@ -1,4 +1,49 @@
+"use client";
+
+import { useState } from "react";
+
 export default function Contact() {
+    const [formData, setFormData] = useState({
+        name: "",
+        email: "",
+        message: ""
+    });
+    const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
+    const [errorMessage, setErrorMessage] = useState("");
+
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+        setFormData({ ...formData, [e.target.id]: e.target.value });
+    };
+
+    const handleSubmit = async (e: React.FormEvent) => {
+        e.preventDefault();
+        setStatus("submitting");
+        setErrorMessage("");
+
+        try {
+            const response = await fetch("/send-mail.php", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(formData),
+            });
+
+            const result = await response.json();
+
+            if (response.ok && result.status === "success") {
+                setStatus("success");
+                setFormData({ name: "", email: "", message: "" });
+            } else {
+                setStatus("error");
+                setErrorMessage(result.message || "Something went wrong.");
+            }
+        } catch (error) {
+            setStatus("error");
+            setErrorMessage("Failed to send message. Please try again.");
+        }
+    };
+
     return (
         <section id="contact" className="py-24 bg-black text-white relative overflow-hidden">
             <div className="container px-4 mx-auto relative z-10">
@@ -54,13 +99,16 @@ export default function Contact() {
 
                     {/* Right Content - Form */}
                     <div className="bg-[#0a0a0a] border border-white/10 rounded-3xl p-8 md:p-12">
-                        <form className="space-y-6">
+                        <form onSubmit={handleSubmit} className="space-y-6">
                             <div className="space-y-2">
                                 <label htmlFor="name" className="text-xs font-bold text-white uppercase tracking-wider">Name</label>
                                 <input
                                     type="text"
                                     id="name"
+                                    value={formData.name}
+                                    onChange={handleChange}
                                     placeholder="Enter your name*"
+                                    required
                                     className="w-full h-14 px-4 rounded-lg bg-[#111] border border-white/10 text-white placeholder:text-gray-600 focus:outline-none focus:border-accent-mint/50 transition-colors"
                                 />
                             </div>
@@ -70,28 +118,42 @@ export default function Contact() {
                                 <input
                                     type="email"
                                     id="email"
+                                    value={formData.email}
+                                    onChange={handleChange}
                                     placeholder="Enter your email*"
+                                    required
                                     className="w-full h-14 px-4 rounded-lg bg-[#111] border border-white/10 text-white placeholder:text-gray-600 focus:outline-none focus:border-accent-mint/50 transition-colors"
                                 />
                             </div>
 
                             <div className="space-y-2">
-                                <label htmlFor="message" className="text-xs font-bold text-white uppercase tracking-wider">Your Messege</label>
+                                <label htmlFor="message" className="text-xs font-bold text-white uppercase tracking-wider">Your Message</label>
                                 <textarea
                                     id="message"
                                     rows={5}
-                                    placeholder="Enter Your Messege ....."
+                                    value={formData.message}
+                                    onChange={handleChange}
+                                    placeholder="Enter Your Message ....."
+                                    required
                                     className="w-full p-4 rounded-lg bg-[#111] border border-white/10 text-white placeholder:text-gray-600 focus:outline-none focus:border-accent-mint/50 transition-colors resize-none"
                                 ></textarea>
                             </div>
 
                             <button
-                                type="button"
-                                className="inline-flex items-center justify-center h-12 px-8 rounded-md bg-accent-mint text-black font-bold text-sm hover:opacity-90 transition-opacity gap-2 mt-2"
+                                type="submit"
+                                disabled={status === "submitting"}
+                                className="inline-flex items-center justify-center h-12 px-8 rounded-md bg-accent-mint text-black font-bold text-sm hover:opacity-90 transition-opacity gap-2 mt-2 disabled:opacity-50 disabled:cursor-not-allowed"
                             >
-                                SUBMIT
+                                {status === "submitting" ? "SENDING..." : "SUBMIT"}
                                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" /></svg>
                             </button>
+
+                            {status === "success" && (
+                                <p className="text-green-500 text-sm font-bold mt-4">Message sent successfully! We'll be in touch soon.</p>
+                            )}
+                            {status === "error" && (
+                                <p className="text-red-500 text-sm font-bold mt-4">{errorMessage}</p>
+                            )}
                         </form>
                     </div>
 
